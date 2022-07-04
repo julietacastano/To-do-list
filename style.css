@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: #EF2F88;
+    font-family: 'Montserrat', sans-serif;
+}
+.main{
+    height: 500px;
+    background: linear-gradient(#EF2F88, #9198e5);
+}
