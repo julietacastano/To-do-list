@@ -14,44 +14,47 @@
 </head>
 <body>
     <header class="header"><h1 class=>ToDo list</h1></header>
-    <main class="main container-fluid">
-        <section class="row">
-            <div class="col-lg-2 tasks">
-                <ul class="tasks-list">
-                        <li class="tasks-list-items">Tableros</li>
-                        <li><button type="button" class="btn btn-light button">Agrega una lista de tareas</button> </li>
+    <main class="main container-fluid row ">
+<!--Create a new list-->
+        <div class="all-lists col-lg-3">
+            <h2>My lists</h2>
+            <ul class="list-name">
+                <li class="list-name-item active-list">Grocery</li>
+            </ul>
+            <form action="">
+                <input type="text" class="new list-input" placeholder="Create new list">
+                <button class="btn button-list"><i class="fa-solid fa-plus"></i></button>
+            </form>
+        </div>
+<!--Lists-->
+        <div class="to-do-list col-lg-5">
+    <!--Header-->
+            <div class="to-do-list-header">
+                <h3>Personal</h3>
+                <div class="task-counter"> 3 tasks compelete</div>  
+            </div>
+    <!--Tasks-->
+            <div class="to-do-list-body">
+                <ul class="to-do-tasks">
+                    <li class="to-do-tasks-item">
+                        <div class="task">
+                            <input class="form-check-input me-1 task-checkbox" type="checkbox" value=""> Task 1
+                        </div>
+                        <div class="task-button">
+                            <button class="btn btn-sm btn-danger delete-task"><i class="fa-solid fa-trash-can"></i></button>
+                            <button class="btn btn-sm btn-success edit-task"><i class="fa-solid fa-pencil"></i></button>
+                        </div>
+                    </li>
                 </ul>
             </div>
-            <div class="tablero col-lg-10">
-                <div class="lista">
-                    <h5>To do list 1</h5>
-                    <form class="form">
-                        <div class="form__item">
-                            <input type="text" class="form-control" placeholder="Agregar tarea" required>
-                        </div>
-                    </form>
-                </div>
-                <div class="lista">
-                    <h5>To do list 2</h5>
-                    <form class="form">
-                        <div class="form__item">
-                            <input type="text" class="form-control" placeholder="Agregar tarea" required>
-                        </div>
-                    </form>
-                </div>
-                <div class="lista">
-                    <h5>To do list 3</h5>
-                    <form class="form">
-                        <div class="form__item">
-                            <input type="text" class="form-control" placeholder="Agregar tarea" required>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
+    <!--New task-->
+            <form action="">
+                <input type="text" class="new task-input" placeholder="Add new task">
+                <button class="btn button-task"><i class="fa-solid fa-plus"></i></button>
+            </form>
+        </div>
     </main>
-    
+    <script src="./main.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-<script src="./main.js"></script>
 </html>
